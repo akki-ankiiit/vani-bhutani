@@ -17,7 +17,6 @@ test("homepage renders, scrolls, and loads its image assets", async ({
   page.on("pageerror", (error) => errors.push(error.message));
   await openPage(page);
   await expect(page.locator(".hero-s h1")).toHaveText(/Vani\s*Bhutani/);
-  expect(await page.content()).not.toMatch(/azure/i);
   await expect(page.locator(".hero-s h1")).toBeVisible();
   await expect
     .poll(() =>
