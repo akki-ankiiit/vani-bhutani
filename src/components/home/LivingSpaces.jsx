@@ -1,4 +1,5 @@
 import FlowerVideo from "../media/FlowerVideo";
+import { sectionImages } from "../../data/vani-content";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function LivingSpaces() {
   return (
@@ -35,9 +36,9 @@ export default function LivingSpaces() {
                     <div className="interior-s_l_img">
                       <div data-scroll-reveal="slide" className="img-w">
                         <img
-                          src="/assets/interiors/retreat.webp"
+                          src={sectionImages.living.lead.src}
                           loading="eager"
-                          alt="Warm contemporary home with a restrained material palette"
+                          alt={sectionImages.living.lead.alt}
                           className="img"
                         />
                       </div>
@@ -67,9 +68,9 @@ export default function LivingSpaces() {
                   <div className="interior-s_r_img">
                     <div data-scroll-reveal="slide" className="img-w">
                       <img
-                        src="/assets/interiors/villa.webp"
+                        src={sectionImages.living.secondary.src}
                         loading="eager"
-                        alt="Generous residential interior connecting indoors and outdoors"
+                        alt={sectionImages.living.secondary.alt}
                         className="img"
                       />
                     </div>
@@ -78,17 +79,13 @@ export default function LivingSpaces() {
                     <div className="u-16" />
                     <div className="red-line" />
                     <h4 data-scroll-reveal="p" className="h5">
-                      Beautiful to look at. Effortless to live in. Every detail
-                      earns its place.
+                      Functional in plan. Timeless in character. Every detail earns its place.
                     </h4>
                   </div>
                   <div className="interior-s_r_desc">
                     <div className="u-64" />
                     <p data-scroll-reveal="p" className="p1">
-                      Intuitive layouts. Integrated storage. Layered lighting.
-                      Materials that respond to our climate. Craftsmanship you
-                      can see and feel. A home designed for real life, in all
-                      its beautiful detail.
+                      Thoughtful detailing. Layered lighting. Material exploration and craftsmanship you can see and feel. Interiors designed around how people experience their surroundings.
                     </p>
                     <div className="u-96" />
                   </div>
@@ -102,19 +99,19 @@ export default function LivingSpaces() {
                       <div data-magnetic-inner="" className="btn-circle_label">
                         <a
                           hover-nav-item=""
-                          aria-label="Explore our projects"
+                          aria-label="Explore our work"
                           href="/projects"
                           className="nav-item w-inline-block"
                         >
                           <div className="nav-item_label">
                             <div className="nav-item_label_text">
                               <div hover="text" className="l1">
-                                Explore our projects
+                                Explore our work
                               </div>
                             </div>
                             <div className="nav-item_label_text is-2">
                               <div hover="text" className="l1">
-                                Explore our projects
+                                Explore our work
                               </div>
                             </div>
                           </div>
@@ -159,7 +156,7 @@ export default function LivingSpaces() {
                         </svg>
                       </div>
                       <a
-                        aria-label="Explore our projects"
+                        aria-label="Explore our work"
                         href="/projects"
                         className="btn-circle_link w-inline-block"
                       />
@@ -186,9 +183,9 @@ export default function LivingSpaces() {
                           className="img-w"
                         >
                           <img
-                            src="/assets/interiors/bedroom.webp"
+                            src={sectionImages.living.slides[0].src}
                             loading="eager"
-                            alt="Calm bedroom with layered textiles and warm lighting"
+                            alt={sectionImages.living.slides[0].alt}
                             className="img"
                           />
                         </div>
@@ -207,9 +204,9 @@ export default function LivingSpaces() {
                           className="img-w"
                         >
                           <img
-                            src="/assets/interiors/suite.webp"
+                            src={sectionImages.living.slides[1].src}
                             loading="eager"
-                            alt="Restful bedroom with soft linen and natural textures"
+                            alt={sectionImages.living.slides[1].alt}
                             className="img"
                           />
                         </div>
@@ -228,9 +225,9 @@ export default function LivingSpaces() {
                           className="img-w"
                         >
                           <img
-                            src="/assets/interiors/bath.webp"
+                            src={sectionImages.living.slides[2].src}
                             loading="eager"
-                            alt="Refined bathroom with stone surfaces and warm metallic details"
+                            alt={sectionImages.living.slides[2].alt}
                             className="img"
                           />
                         </div>
@@ -249,9 +246,9 @@ export default function LivingSpaces() {
                           className="img-w"
                         >
                           <img
-                            src="/assets/interiors/kitchen.webp"
+                            src={sectionImages.living.slides[3].src}
                             loading="eager"
-                            alt="Bespoke kitchen with natural finishes and clean-lined cabinetry"
+                            alt={sectionImages.living.slides[3].alt}
                             className="img"
                           />
                         </div>

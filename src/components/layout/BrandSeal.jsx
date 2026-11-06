@@ -19,7 +19,7 @@ export default function BrandSeal() {
         letterSpacing="2.3"
       >
         <textPath href={`#${id}`} textLength="290" lengthAdjust="spacing">
-          AZURE INTERIORS · INTERIORS · INDIA ·{" "}
+          VANI BHUTANI · DESIGNS · SURAT ·{" "}
         </textPath>
       </text>
     </svg>

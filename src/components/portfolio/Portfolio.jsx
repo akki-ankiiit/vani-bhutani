@@ -32,15 +32,15 @@ export default function Portfolio() {
                 </div>
                 <div className="u-24" />
                 <p className="p1 portfolio-intro">
-                  A collection of design studies exploring the many ways we
-                  live. Rooted in place, shaped around people.
+                  Residential and commercial interiors by Vani Bhutani Designs —
+                  from Surat and Vapi to Mumbai, completed between 2015 and 2026.
                 </p>
                 <div className="u-32" />
                 <div className="apart-s_cms_filter">
                   <div className="apart-s_cms_filter_c">
                     <div className="grid _9-columns">
                       <ProjectFilter
-                        label="Spaces"
+                        label="Sector"
                         group="type"
                         options={projectTypes}
                       />
@@ -94,8 +94,8 @@ export default function Portfolio() {
                 <div data-filter-empty="" className="portfolio-empty">
                   <h2 className="h4">Room for something new.</h2>
                   <p className="p1">
-                    No studies match these filters. Reset to explore the full
-                    collection.
+                    No projects match these filters. Reset to explore the full
+                    portfolio.
                   </p>
                 </div>
                 <div className="u-160" />

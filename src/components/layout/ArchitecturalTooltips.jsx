@@ -10,13 +10,11 @@ export default function ArchitecturalTooltips() {
         >
           <div className="floating-tip-card">
             <div className="floating-tip-card_t">
-              <h1 className="h5">Made to last</h1>
+              <h1 className="h5">Material honesty</h1>
             </div>
             <div className="floating-tip-card_b">
               <p className="p1">
-                Natural finishes and honest materials, selected for their
-                character and longevity. Beautiful today, and richer with the
-                passing of time.
+                Natural finishes and honest materials, chosen for their character and longevity — a design philosophy that balances form and function.
               </p>
             </div>
             <div className="card_decor">
@@ -168,12 +166,11 @@ export default function ArchitecturalTooltips() {
         >
           <div className="floating-tip-card">
             <div className="floating-tip-card_t">
-              <h1 className="h5">Light & flow</h1>
+              <h1 className="h5">Light & atmosphere</h1>
             </div>
             <div className="floating-tip-card_b">
               <p className="p1">
-                We let daylight lead the way, using thoughtful planning and
-                layered lighting to give each room its own rhythm.
+                Light is allowed to play an active role — layering atmosphere through the day and into the evening.
               </p>
             </div>
             <div className="card_decor">
@@ -325,13 +322,11 @@ export default function ArchitecturalTooltips() {
         >
           <div className="floating-tip-card">
             <div className="floating-tip-card_t">
-              <h1 className="h5">Your everyday sanctuary</h1>
+              <h1 className="h5">Spatial storytelling</h1>
             </div>
             <div className="floating-tip-card_b">
               <p className="p1">
-                Spaces that balance togetherness with quiet corners. Designed
-                for family, friendship and the small rituals that make a house
-                your own.
+                Every space is an opportunity to create something meaningful, shaped by how people experience their surroundings.
               </p>
             </div>
             <div className="card_decor">

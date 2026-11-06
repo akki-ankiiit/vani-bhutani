@@ -1,4 +1,4 @@
-import HeaderLogo from "../apartmentspage/HeaderLogo";
+import HeaderLogo from "./HeaderLogo";
 import Navigation from "../contactpage/Navigation";
 import MenuModal from "../contactpage/MenuModal";
 import CallModal from "./CallModal";

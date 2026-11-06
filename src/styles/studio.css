@@ -50,3 +50,19 @@
   .project-related { padding-left: var(--24px); padding-right: var(--24px); }
   .studio-breadcrumb { display: none; }
 }
+.project-copy + .project-copy { margin-top: 16px; }
+/* Vani Bhutani Designs identity */
+.vani-mark { display: block; width: 100%; height: 100%; background-color: currentColor; -webkit-mask: url("/assets/vani/logo/vani-mark.png") center / contain no-repeat; mask: url("/assets/vani/logo/vani-mark.png") center / contain no-repeat; }
+/* The hero now uses genuine day and night photography of the same Avencia
+   courtyard, so the simulated night grade is no longer needed. */
+.hero-w_bg_master_img_night .hero-img { filter: none; }
+.hero-w_bg_master_img_night::after { content: none; }
+.service-deliverables { margin-top: 24px; max-width: 34em; opacity: .8; }
+.press-thumb { width: min(320px, 70%); margin: 0 auto; overflow: hidden; border-radius: var(--12px); }
+.press-thumb img { display: block; width: 100%; height: auto; }
+.press-link { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 767px) {
+  /* Long publication names (e.g. "Architectural Digest") must fit the accordion row. */
+  .press-name { font-size: min(9vw, 44px); }
+}
+.footer-credit { color: inherit; text-decoration: underline; text-underline-offset: 4px; }

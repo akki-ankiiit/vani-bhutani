@@ -18,7 +18,7 @@ export function useContactForm() {
     }
     if (!endpoint) {
       status.textContent =
-        "Online enquiries are not connected yet. Please call +34 (655) 408-648 to speak with the sales team.";
+        "Online enquiries are not connected yet. Please call the studio on +91 98794 14255.";
       labels.forEach((label) => {
         label.textContent = "Submit";
       });
@@ -46,7 +46,7 @@ export function useContactForm() {
       } else status.textContent = "Thank you. Your enquiry has been sent.";
     } catch {
       status.textContent =
-        "Your enquiry could not be sent. Please try again or call +34 (655) 408-648.";
+        "Your enquiry could not be sent. Please try again or call +91 98794 14255.";
     } finally {
       delete form.dataset.sending;
       labels.forEach((label) => {

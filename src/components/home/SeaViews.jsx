@@ -1,3 +1,4 @@
+import { sectionImages } from "../../data/vani-content";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function SeaViews() {
   return (
@@ -9,9 +10,7 @@ export default function SeaViews() {
             <div className="grid">
               <div className="cta-s_desc">
                 <p data-scroll-reveal="p" className="l1 a-center">
-                  Every meaningful space begins with a conversation. Tell us
-                  about the home you imagine, the way you live, and what matters
-                  most to you.
+                  Every meaningful space begins with a conversation. Tell us about the space you imagine, the way you live and what matters most to you.
                 </p>
               </div>
             </div>
@@ -19,13 +18,13 @@ export default function SeaViews() {
             <div className="grid">
               <div className="cta-s_title">
                 <h2 data-scroll-reveal="h" className="h1 a-center">
-                  A home
+                  A space
                   <br />
-                  with soul
+                  with meaning
                 </h2>
                 <div className="u-32" />
                 <h3 data-scroll-reveal="h" className="c1 a-center">
-                  Thoughtfully yours
+                  Start a conversation
                 </h3>
                 <div className="u-160" />
                 <div data-scroll-reveal="ctn" className="cta-s_title_btn">
@@ -38,19 +37,19 @@ export default function SeaViews() {
                     <div data-magnetic-inner="" className="btn-circle_label">
                       <a
                         hover-nav-item=""
-                        aria-label="Explore our projects"
+                        aria-label="Explore our work"
                         href="/projects"
                         className="nav-item w-inline-block"
                       >
                         <div className="nav-item_label">
                           <div className="nav-item_label_text">
                             <div hover="text" className="l1">
-                              Explore our projects
+                              Explore our work
                             </div>
                           </div>
                           <div className="nav-item_label_text is-2">
                             <div hover="text" className="l1">
-                              Explore our projects
+                              Explore our work
                             </div>
                           </div>
                         </div>
@@ -95,7 +94,7 @@ export default function SeaViews() {
                       </svg>
                     </div>
                     <a
-                      aria-label="Explore our projects"
+                      aria-label="Explore our work"
                       href="/projects"
                       className="btn-circle_link w-inline-block"
                     />
@@ -109,8 +108,8 @@ export default function SeaViews() {
               <img
                 data-parallax="img"
                 loading="eager"
-                alt="Warm, light-filled living room with natural materials and sculptural furniture"
-                src="/assets/interiors/hero.webp"
+                alt={sectionImages.cta.alt}
+                src={sectionImages.cta.src}
                 className="img-p"
               />
               <div className="img-over-grad from-top _4x" />

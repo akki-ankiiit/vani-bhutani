@@ -1,3 +1,4 @@
+import { sectionImages } from "../../data/vani-content";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function ResidenceTypes() {
   return (
@@ -29,7 +30,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Configuration
+                                    Portfolio
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -37,7 +38,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    3–5 BHK
+                                    8 projects
                                   </h5>
                                 </div>
                                 <div className="data-item">
@@ -46,7 +47,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Typical area
+                                    Project area
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -54,7 +55,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    3,000 — 6,000 sq ft
+                                    1,150 — 8,000 sq. ft.
                                   </h5>
                                 </div>
                               </div>
@@ -66,8 +67,7 @@ export default function ResidenceTypes() {
                                 data-slider="p"
                                 className="p1 mob_a-center"
                               >
-                                Generous, grounded homes that connect
-                                architecture, interiors and the landscape.
+                                Homes in Surat, Vapi and Mumbai, completed between 2015 and 2024.
                               </p>
                               <div className="u-24" />
                               <div
@@ -76,21 +76,21 @@ export default function ResidenceTypes() {
                                 className="apart-type-slide_btn"
                               >
                                 <a
-                                  aria-label="Explore villas"
+                                  aria-label="Explore residential"
                                   hover-btn=""
                                   hover-nav-item=""
-                                  href="/projects?type=villas"
+                                  href="/projects?type=residential"
                                   className="btn w-inline-block"
                                 >
                                   <div className="btn_label">
                                     <div className="btn_label_text">
                                       <div hover="text" className="l1">
-                                        Explore villas
+                                        Explore residential
                                       </div>
                                     </div>
                                     <div className="btn_label_text is-2">
                                       <div hover="text" className="l1">
-                                        Explore villas
+                                        Explore residential
                                       </div>
                                     </div>
                                   </div>
@@ -110,7 +110,7 @@ export default function ResidenceTypes() {
                             data-slider="h"
                             className="h2 a-center"
                           >
-                            Private villas
+                            Residential
                           </h3>
                           <div className="u-32 b-mob" />
                         </div>
@@ -122,9 +122,9 @@ export default function ResidenceTypes() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/villa.webp"
+                                src={sectionImages.types.residential.src}
                                 loading="eager"
-                                alt="Generous residential interior connecting indoors and outdoors"
+                                alt={sectionImages.types.residential.alt}
                                 className="img"
                               />
                             </div>
@@ -150,7 +150,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Configuration
+                                    Portfolio
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -158,7 +158,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    2–4 BHK
+                                    2 projects
                                   </h5>
                                 </div>
                                 <div className="data-item">
@@ -167,7 +167,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Typical area
+                                    Project area
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -175,7 +175,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    1,200 — 3,000 sq ft
+                                    800 — 900 sq. ft.
                                   </h5>
                                 </div>
                               </div>
@@ -187,8 +187,7 @@ export default function ResidenceTypes() {
                                 data-slider="p"
                                 className="p1 mob_a-center"
                               >
-                                Intelligent planning and bespoke details make
-                                everyday city living feel effortless.
+                                A Japanese-inspired café and a fashion boutique, both in Surat.
                               </p>
                               <div className="u-24" />
                               <div
@@ -197,21 +196,21 @@ export default function ResidenceTypes() {
                                 className="apart-type-slide_btn"
                               >
                                 <a
-                                  aria-label="Explore city homes"
+                                  aria-label="Explore commercial"
                                   hover-btn=""
                                   hover-nav-item=""
-                                  href="/projects?type=homes"
+                                  href="/projects?type=commercial"
                                   className="btn w-inline-block"
                                 >
                                   <div className="btn_label">
                                     <div className="btn_label_text">
                                       <div hover="text" className="l1">
-                                        Explore city homes
+                                        Explore commercial
                                       </div>
                                     </div>
                                     <div className="btn_label_text is-2">
                                       <div hover="text" className="l1">
-                                        Explore city homes
+                                        Explore commercial
                                       </div>
                                     </div>
                                   </div>
@@ -231,7 +230,7 @@ export default function ResidenceTypes() {
                             data-slider="h"
                             className="h2 a-center"
                           >
-                            City homes
+                            Commercial
                           </h3>
                           <div className="u-32 b-mob" />
                         </div>
@@ -243,9 +242,9 @@ export default function ResidenceTypes() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/apartment.webp"
+                                src={sectionImages.types.commercial.src}
                                 loading="eager"
-                                alt="Elegant apartment interior with bespoke joinery"
+                                alt={sectionImages.types.commercial.alt}
                                 className="img"
                               />
                             </div>
@@ -271,7 +270,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Configuration
+                                    Portfolio
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -279,7 +278,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    Bespoke
+                                     7 services
                                   </h5>
                                 </div>
                                 <div className="data-item">
@@ -288,7 +287,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Typical area
+                                    Project area
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -296,7 +295,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    2,000 — 8,000 sq ft
+                                    Online & remote
                                   </h5>
                                 </div>
                               </div>
@@ -308,8 +307,7 @@ export default function ResidenceTypes() {
                                 data-slider="p"
                                 className="p1 mob_a-center"
                               >
-                                Intimate restaurants, boutique stays and spaces
-                                with a distinct sense of place.
+                                Online consultations, virtual room design and complete remote home design.
                               </p>
                               <div className="u-24" />
                               <div
@@ -318,21 +316,21 @@ export default function ResidenceTypes() {
                                 className="apart-type-slide_btn"
                               >
                                 <a
-                                  aria-label="Explore hospitality"
+                                  aria-label="Explore e-services"
                                   hover-btn=""
                                   hover-nav-item=""
-                                  href="/projects?type=hospitality"
+                                  href="/#services"
                                   className="btn w-inline-block"
                                 >
                                   <div className="btn_label">
                                     <div className="btn_label_text">
                                       <div hover="text" className="l1">
-                                        Explore hospitality
+                                        Explore e-services
                                       </div>
                                     </div>
                                     <div className="btn_label_text is-2">
                                       <div hover="text" className="l1">
-                                        Explore hospitality
+                                        Explore e-services
                                       </div>
                                     </div>
                                   </div>
@@ -352,7 +350,7 @@ export default function ResidenceTypes() {
                             data-slider="h"
                             className="h2 a-center"
                           >
-                            Hospitality
+                            E-services
                           </h3>
                           <div className="u-32 b-mob" />
                         </div>
@@ -364,9 +362,9 @@ export default function ResidenceTypes() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/hospitality.webp"
+                                src={sectionImages.types.services.src}
                                 loading="eager"
-                                alt="Intimate hospitality interior with warm lighting and natural timber"
+                                alt={sectionImages.types.services.alt}
                                 className="img"
                               />
                             </div>

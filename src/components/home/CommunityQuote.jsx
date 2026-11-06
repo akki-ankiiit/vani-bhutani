@@ -1,3 +1,4 @@
+import { sectionImages } from "../../data/vani-content";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function CommunityQuote() {
   return (
@@ -30,9 +31,7 @@ export default function CommunityQuote() {
                 </div>
                 <div className="red-line" />
                 <h4 data-scroll-reveal="p" data-tab="p" className="h5">
-                  The most beautiful rooms are the ones that make you feel at
-                  ease. We bring together light, proportion and the warmth of
-                  Indian craft to make that feeling last.
+                  Form and function, material honesty and emotional resonance — an ongoing exploration of spatial storytelling, restraint and atmosphere.
                 </h4>
                 <div className="u-64" />
                 <div className="grid _4-columns">
@@ -41,7 +40,7 @@ export default function CommunityQuote() {
                       Our design philosophy
                     </div>
                     <div data-scroll-reveal="p" className="l1 reg">
-                      Azure Interiors
+                      Vani Bhutani Designs
                     </div>
                   </div>
                 </div>
@@ -55,8 +54,8 @@ export default function CommunityQuote() {
               <div className="img-over-grad from-bot bot _4x b-desk" />
               <img
                 className="img h-auto quote-w_bg_img"
-                src="/assets/interiors/courtyard.webp"
-                alt="Airy living space opening onto a landscaped courtyard"
+                src={sectionImages.quote.src}
+                alt={sectionImages.quote.alt}
                 data-parallax="img-out"
                 loading="eager"
               />

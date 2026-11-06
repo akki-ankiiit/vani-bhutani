@@ -1,3 +1,4 @@
+import { heroImages } from "../../data/vani-content";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function Hero() {
   return (
@@ -15,9 +16,9 @@ export default function Hero() {
                     data-scroll-reveal="h"
                     className="h1 a-center"
                   >
-                    Azure
+                    Vani
                     <br />
-                    Interiors
+                    Bhutani
                   </h1>
                   <div className="hero-s_logo_a">
                     <h2
@@ -25,7 +26,7 @@ export default function Hero() {
                       data-scroll-reveal="a"
                       className="a2"
                     >
-                      India
+                      Designs
                     </h2>
                   </div>
                 </div>
@@ -38,7 +39,7 @@ export default function Hero() {
                     data-prevent-flicker=""
                     className="a-left"
                   >
-                    <div className="span">Your story</div>
+                    <div className="span">Spaces that speak</div>
                   </span>
                   <div
                     data-prevent-flicker=""
@@ -86,7 +87,7 @@ export default function Hero() {
                     data-prevent-flicker=""
                     className="a-right"
                   >
-                    <div className="span">Our canvas</div>
+                    <div className="span">Stories that stay</div>
                   </span>
                 </h3>
               </div>
@@ -201,8 +202,13 @@ export default function Hero() {
                     <div data-tab="img" className="img-w h-auto">
                       <img
                         loading="eager"
-                        src="/assets/interiors/hero.webp"
-                        alt="Warm, light-filled living room with natural materials and sculptural furniture"
+                        src={heroImages.day.src}
+                        srcSet={heroImages.day.srcSet}
+                        sizes={heroImages.sizes}
+                        width={heroImages.day.width}
+                        height={heroImages.day.height}
+                        alt={heroImages.day.alt}
+                        fetchPriority="high"
                         className="img h-auto hero-img"
                       />
                     </div>
@@ -214,8 +220,13 @@ export default function Hero() {
                     <div data-tab="img" className="img-w h-auto">
                       <img
                         loading="eager"
-                        src="/assets/interiors/hero.webp"
-                        alt="Warm, light-filled living room with natural materials and sculptural furniture"
+                        src={heroImages.night.src}
+                        srcSet={heroImages.night.srcSet}
+                        sizes={heroImages.sizes}
+                        width={heroImages.night.width}
+                        height={heroImages.night.height}
+                        alt={heroImages.night.alt}
+                        fetchPriority="low"
                         className="img h-auto hero-img"
                       />
                     </div>
@@ -243,19 +254,19 @@ export default function Hero() {
                         >
                           <a
                             hover-nav-item=""
-                            aria-label="Explore our projects"
+                            aria-label="Explore our work"
                             href="/projects"
                             className="nav-item w-inline-block"
                           >
                             <div className="nav-item_label">
                               <div className="nav-item_label_text">
                                 <div hover="text" className="l1">
-                                  Explore our projects
+                                  Explore our work
                                 </div>
                               </div>
                               <div className="nav-item_label_text is-2">
                                 <div hover="text" className="l1">
-                                  Explore our projects
+                                  Explore our work
                                 </div>
                               </div>
                             </div>
@@ -300,7 +311,7 @@ export default function Hero() {
                           </svg>
                         </div>
                         <a
-                          aria-label="Explore our projects"
+                          aria-label="Explore our work"
                           href="/projects"
                           className="btn-circle_link w-inline-block"
                         />
@@ -310,7 +321,10 @@ export default function Hero() {
                   <div className="u-32" />
                   <div className="grid">
                     <div className="hero-s_desc">
-                      <p className="l1 a-center" />
+                      <p className="l1 a-center">
+                        Thoughtfully designed interiors shaped by material,
+                        atmosphere and the art of living.
+                      </p>
                     </div>
                   </div>
                   <div className="u-48" />

@@ -1,8 +1,9 @@
 import FlowerVideo from "../media/FlowerVideo";
+import { sectionImages } from "../../data/vani-content";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function Architecture() {
   return (
-    <section className="section clip">
+    <section id="published" className="section clip">
       <div className="container">
         <div data-video-playpause="" className="arch-scroll-area">
           <div className="arch-intro-s b-desk">
@@ -24,7 +25,7 @@ export default function Architecture() {
               <div className="arch-s_t">
                 <div className="u-48" />
                 <h2 data-text="h" data-fit-text="" className="h1 a-center">
-                  Our craft
+                  Published
                 </h2>
                 <div className="u-32" />
                 <div className="grid">
@@ -38,18 +39,16 @@ export default function Architecture() {
                   <div className="arch-s_quote w-clearfix">
                     <div className="red-line" />
                     <h3 data-part="p" className="h5">
-                      We bring a contemporary eye to Indian craftsmanship,
-                      creating a quiet dialogue between tradition, texture and
-                      modern life
+                      Published multiple times in Architectural Digest, ELLE Decor and Indoor Outdoor Magazine — and featured in Phaidon’s Defining Style: The Book of Interior Design
                     </h3>
                     <div className="u-64" />
                     <div className="grid _4-columns">
                       <div className="arch-s_author">
                         <div data-part="p" className="l1">
-                          Designed with intention
+                          Recognised worldwide
                         </div>
                         <div data-part="p" className="l1 reg">
-                          Crafted in collaboration
+                          Architectural Digest · ELLE Decor · Phaidon
                         </div>
                       </div>
                     </div>
@@ -66,19 +65,19 @@ export default function Architecture() {
                       <div data-magnetic-inner="" className="btn-circle_label">
                         <a
                           hover-nav-item=""
-                          aria-label="Discuss your space"
+                          aria-label="Start a conversation"
                           href="#"
                           className="nav-item w-inline-block"
                         >
                           <div className="nav-item_label">
                             <div className="nav-item_label_text">
                               <div hover="text" className="l1">
-                                Discuss your space
+                                Start a conversation
                               </div>
                             </div>
                             <div className="nav-item_label_text is-2">
                               <div hover="text" className="l1">
-                                Discuss your space
+                                Start a conversation
                               </div>
                             </div>
                           </div>
@@ -123,7 +122,7 @@ export default function Architecture() {
                         </svg>
                       </div>
                       <a
-                        aria-label="Discuss your space"
+                        aria-label="Start a conversation"
                         href="#"
                         className="btn-circle_link w-inline-block"
                       />
@@ -137,8 +136,8 @@ export default function Architecture() {
               <div data-desk="off" data-parallax="w" className="img-w">
                 <img
                   className="img"
-                  src="/assets/interiors/courtyard.webp"
-                  alt="Airy living space opening onto a landscaped courtyard"
+                  src={sectionImages.published.src}
+                  alt={sectionImages.published.alt}
                   data-parallax="img"
                   loading="eager"
                 />

@@ -1,3 +1,4 @@
+import { sectionImages } from "../../data/vani-content";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function ThreeReasons() {
   return (
@@ -92,14 +93,14 @@ export default function ThreeReasons() {
                             data-slider="h"
                             className="h1 a-center b-desk"
                           >
-                            A sense of belonging
+                            Material honesty
                           </h3>
                           <div
                             data-scroll-reveal="h"
                             data-slider="h"
                             className="h2 a-center b-mob"
                           >
-                            A sense of belonging
+                            Material honesty
                           </div>
                           <div className="u-48" />
                         </div>
@@ -112,9 +113,9 @@ export default function ThreeReasons() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/living.webp"
+                                src={sectionImages.reasons[0].src}
                                 loading="eager"
-                                alt="Contemporary living space with carefully layered materials"
+                                alt={sectionImages.reasons[0].alt}
                                 className="img"
                               />
                             </div>
@@ -130,10 +131,7 @@ export default function ThreeReasons() {
                                 data-slider="p"
                                 className="p1 a-center"
                               >
-                                We begin with the way you live. Your morning
-                                rituals, the people you gather, the objects you
-                                treasure — each becomes a starting point for a
-                                home that feels unmistakably yours.
+                                Our design philosophy balances form and function with material honesty — concrete, stone, timber and texture, each used for what it truly is.
                               </p>
                             </div>
                           </div>
@@ -145,7 +143,7 @@ export default function ThreeReasons() {
                                 data-slider="p"
                                 className="l1 a-center"
                               >
-                                Thoughtfully designed. Beautifully lived in.
+                                Vani Bhutani Designs — since 2014
                               </p>
                             </div>
                           </div>
@@ -168,14 +166,14 @@ export default function ThreeReasons() {
                             data-slider="h"
                             className="h1 a-center b-desk"
                           >
-                            Made to endure
+                            Emotional resonance
                           </h3>
                           <div
                             data-scroll-reveal="h"
                             data-slider="h"
                             className="h2 a-center b-mob"
                           >
-                            Made to endure
+                            Emotional resonance
                           </div>
                           <div className="u-48" />
                         </div>
@@ -188,9 +186,9 @@ export default function ThreeReasons() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/detail.webp"
+                                src={sectionImages.reasons[1].src}
                                 loading="eager"
-                                alt="Tactile interior details and handcrafted furniture"
+                                alt={sectionImages.reasons[1].alt}
                                 className="img"
                               />
                             </div>
@@ -206,11 +204,7 @@ export default function ThreeReasons() {
                                 data-slider="p"
                                 className="p1 a-center"
                               >
-                                Natural stone, honest timber and beautifully
-                                resolved details. We work with a considered
-                                material palette and skilled Indian makers to
-                                create interiors that grow more beautiful with
-                                time.
+                                Spaces that inspire and resonate. Interiors shaped by restraint and atmosphere, designed to be felt as much as seen.
                               </p>
                             </div>
                           </div>
@@ -222,7 +216,7 @@ export default function ThreeReasons() {
                                 data-slider="p"
                                 className="l1 a-center"
                               >
-                                Thoughtfully designed. Beautifully lived in.
+                                Vani Bhutani Designs — since 2014
                               </p>
                             </div>
                           </div>
@@ -245,14 +239,14 @@ export default function ThreeReasons() {
                             data-slider="h"
                             className="h1 a-center b-desk"
                           >
-                            Deeply personal
+                            Spatial storytelling
                           </h3>
                           <div
                             data-scroll-reveal="h"
                             data-slider="h"
                             className="h2 a-center b-mob"
                           >
-                            Deeply personal
+                            Spatial storytelling
                           </div>
                           <div className="u-48" />
                         </div>
@@ -265,9 +259,9 @@ export default function ThreeReasons() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/lounge.webp"
+                                src={sectionImages.reasons[2].src}
                                 loading="eager"
-                                alt="Quiet lounge with sculptural furniture and a soft material palette"
+                                alt={sectionImages.reasons[2].alt}
                                 className="img"
                               />
                             </div>
@@ -283,10 +277,7 @@ export default function ThreeReasons() {
                                 data-slider="p"
                                 className="p1 a-center"
                               >
-                                A collaborative studio practice, creating
-                                thoughtful homes and intimate hospitality
-                                spaces. Considered in every detail, personal in
-                                every expression.
+                                Homes that tell unique stories. Every project is an ongoing exploration of spatial storytelling, restraint and atmosphere.
                               </p>
                             </div>
                           </div>
@@ -298,7 +289,7 @@ export default function ThreeReasons() {
                                 data-slider="p"
                                 className="l1 a-center"
                               >
-                                Thoughtfully designed. Beautifully lived in.
+                                Vani Bhutani Designs — since 2014
                               </p>
                             </div>
                           </div>

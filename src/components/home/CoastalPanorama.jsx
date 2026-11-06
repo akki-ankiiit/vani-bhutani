@@ -1,3 +1,4 @@
+import { sectionImages } from "../../data/vani-content";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function CoastalPanorama() {
   return (
@@ -140,15 +141,15 @@ export default function CoastalPanorama() {
                     <div data-scroll-reveal="line" className="line-v" />
                   </div>
                   <h3 data-scroll-reveal="p" className="l1">
-                    Considered spaces, across India
+                    Residential & commercial interiors
                   </h3>
                   <div className="u-32" />
                   <h4 data-scroll-reveal="p" className="p1">
-                    Indian craft. Contemporary living.
+                    Material. Atmosphere. The art of living.
                   </h4>
                   <div className="u-32" />
                   <h5 data-scroll-reveal="p" className="p1">
-                    India
+                    Surat · Vapi · Mumbai
                   </h5>
                 </div>
                 <div className="b-mob">
@@ -202,9 +203,9 @@ export default function CoastalPanorama() {
               </div>
               <div className="img-w h-auto">
                 <img
-                  src="/assets/interiors/dining.webp"
+                  src={sectionImages.panorama.src}
                   loading="eager"
-                  alt="Considered dining and living space in warm neutral tones"
+                  alt={sectionImages.panorama.alt}
                   className="img h-auto"
                 />
                 <div className="img-over-grad from-bot bot _100vh" />

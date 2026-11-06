@@ -1,4 +1,3 @@
-import { photography } from "../../data/media";
 export default function ProjectCard({ project }) {
   return (
     <div
@@ -24,16 +23,19 @@ export default function ProjectCard({ project }) {
               data-city={project.city.toLowerCase()}
               className="l2 reg a-center"
             >
-              {project.city}, India
+              {project.region}
             </p>
           </div>
           <div className="u-24" />
           <div className="portfolio-card-image">
             <img
               hover="img"
-              src={project.image}
-              alt={photography[project.cover].alt}
+              src={project.coverImage.src}
+              width={project.coverImage.width}
+              height={project.coverImage.height}
+              alt={project.coverImage.alt}
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="u-24" />
@@ -42,14 +44,14 @@ export default function ProjectCard({ project }) {
             <div className="u-16" />
             <div className="apart-card_data-list">
               <span data-sort-area={project.area} className="l2 reg">
-                {project.area.toLocaleString("en-IN")} sq ft
+                {project.area.toLocaleString("en-IN")} sq. ft.
               </span>
               <span className="data-divider" />
               <span className="l2 reg">{project.year}</span>
             </div>
             <div className="u-16" />
             <p className="l2 reg a-center">
-              {project.status} <span aria-hidden="true">↗</span>
+              View project <span aria-hidden="true">↗</span>
             </p>
           </div>
         </div>

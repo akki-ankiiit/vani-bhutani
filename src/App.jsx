@@ -8,7 +8,16 @@ import { useContactForm } from "./hooks/useContactForm";
 
 function PageExperience({ Component }) {
   const root = useRef(null);
+  const { hash } = useLocation();
   useSiteExperience(root);
+  useEffect(() => {
+    if (!hash) return;
+    const timer = setTimeout(
+      () => document.querySelector(hash)?.scrollIntoView(),
+      1600,
+    );
+    return () => clearTimeout(timer);
+  }, [hash]);
   const handleSubmit = useContactForm();
 
   return (
@@ -26,11 +35,15 @@ function PageExperience({ Component }) {
 
 function LoadingScreen() {
   return (
-    <div className="route-loading" role="status" aria-label="Loading Azure Interiors">
+    <div
+      className="route-loading"
+      role="status"
+      aria-label="Loading Vani Bhutani Designs"
+    >
       <span>
-        AZURE
+        VANI BHUTANI
         <br />
-        INTERIORS
+        DESIGNS
       </span>
     </div>
   );
@@ -39,11 +52,11 @@ function LoadingScreen() {
 function NotFound() {
   return (
     <main className="not-found">
-      <p className="l2">AZURE INTERIORS</p>
+      <p className="l2">VANI BHUTANI DESIGNS</p>
       <h1 className="h2">
-        A space
+        This space
         <br />
-        to call yours.
+        is still empty.
       </h1>
       <a className="h5" href="/">
         Return home ↗
@@ -64,7 +77,7 @@ export default function App() {
   const [failure, setFailure] = useState(false);
 
   useEffect(() => {
-    document.title = route?.title || "Page not found — Azure Interiors";
+    document.title = route?.title || "Page not found — Vani Bhutani Designs";
     transitioning.current = false;
   }, [route]);
 
@@ -93,7 +106,12 @@ export default function App() {
         target.pathname === location.pathname &&
         target.search === location.search
       ) {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        const section = target.hash && document.querySelector(target.hash);
+        // Same-page section links (e.g. /#services from the menu): wait for
+        // the menu modal to release its scroll lock, then glide to the section.
+        if (section)
+          setTimeout(() => section.scrollIntoView({ behavior: "smooth" }), 700);
+        else window.scrollTo({ top: 0, behavior: "smooth" });
         return;
       }
       transitioning.current = true;
