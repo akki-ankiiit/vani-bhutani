@@ -66,3 +66,6 @@
   .press-name { font-size: min(9vw, 44px); }
 }
 .footer-credit { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+.not-found-links { display: flex; flex-wrap: wrap; gap: 16px 32px; margin-top: 16px; }
+/* Keep the last lines of short content clear of the footer reveal. */
+.studio-legal { padding-bottom: max(100px, 60vh); }

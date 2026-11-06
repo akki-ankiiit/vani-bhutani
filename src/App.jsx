@@ -5,6 +5,7 @@ import { routes } from "./data/routes";
 import ExperienceShell from "./components/layout/ExperienceShell";
 import { useSiteExperience } from "./hooks/useSiteExperience";
 import { useContactForm } from "./hooks/useContactForm";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function PageExperience({ Component }) {
   const root = useRef(null);
@@ -46,22 +47,6 @@ function LoadingScreen() {
         DESIGNS
       </span>
     </div>
-  );
-}
-
-function NotFound() {
-  return (
-    <main className="not-found">
-      <p className="l2">VANI BHUTANI DESIGNS</p>
-      <h1 className="h2">
-        This space
-        <br />
-        is still empty.
-      </h1>
-      <a className="h5" href="/">
-        Return home ↗
-      </a>
-    </main>
   );
 }
 
@@ -143,11 +128,12 @@ export default function App() {
         <button onClick={() => window.location.reload()}>Reload page</button>
       </div>
     );
-  if (!route) return <NotFound />;
-
   return (
     <Suspense fallback={<LoadingScreen />}>
-      <PageExperience key={location.pathname} Component={route.Component} />
+      <PageExperience
+        key={location.pathname}
+        Component={route?.Component ?? NotFoundPage}
+      />
     </Suspense>
   );
 }

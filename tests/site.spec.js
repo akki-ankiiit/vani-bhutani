@@ -134,3 +134,10 @@ test("every Vani Bhutani project image resolves", async ({ page, request }) => {
   expect(sources).toHaveLength(10);
   for (const src of sources) expect((await request.get(src)).ok()).toBe(true);
 });
+
+test("unknown routes show the branded 404 page", async ({ page }) => {
+  await openPage(page, "/this-page-does-not-exist");
+  await expect(page).toHaveTitle("Page not found — Vani Bhutani Designs");
+  await expect(page.locator("main h1").first()).toContainText("is still empty");
+  await expect(page.locator(".not-found-links a")).toHaveCount(3);
+});
